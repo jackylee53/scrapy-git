@@ -8,7 +8,7 @@ from scrapy.linkextractors import LinkExtractor
 class BaidutiebaSpider(scrapy.Spider):
     name = 'baidutieba'
     allowed_domains = ['tieba.baidu.com']
-    keyword = '小美女'
+    keyword = 'python爬虫'
     baseurl = 'https://tieba.baidu.com/'
     urlname = 'https://tieba.baidu.com/f?ie=utf-8&kw={keyword}&fr=search'
     start_urls = [urlname.format(keyword=quote(keyword))]
